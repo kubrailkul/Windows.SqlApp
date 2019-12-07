@@ -20,8 +20,10 @@ namespace Vektorel.KitapBankosu.BLL
             {
                 p[3].Value = DBNull.Value;
             }
-            return hlp.ExecuteNonQuery("Insert into tblYazarlar values (@Ad,@Soyad,@Dtar,@Olumtarih)", p) > 0;
 
+
+            return hlp.ExecuteNonQuery("Insert into tblYazarlar values (@Ad,@Soyad,@Dtar,@Olumtarih)", p) > 0;
+           
                 }
         
             }
