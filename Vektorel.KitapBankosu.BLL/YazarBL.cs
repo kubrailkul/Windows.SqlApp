@@ -25,9 +25,21 @@ namespace Vektorel.KitapBankosu.BLL
 
             return hlp.ExecuteNonQuery("Insert into tblYazarlar values (@Ad,@Soyad,@Dtar,@Olumtarih)", p) > 0;
 
-                }
-        
+        }
+
+        public Yazar Yazarbul(string yazarad)
+        {
+            SqlParameter[] p = { new SqlParameter("@Ad", yazarad) };
+            SqlDataReader dr = hlp.ExecuteReader("Select * from tblYazarlar where Ad=@Ad", p);
+            Yazar yz = null;
+            if (dr.Read())
+            {
+                yz = new Yazar();
+                yz.Ad = dr["Ad"].ToString();
             }
-      
+            return yz;
+        }
+
     }
+}
 

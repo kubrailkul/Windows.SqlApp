@@ -50,21 +50,14 @@ namespace Vektorel.DAL
             {
 
                 SqlCommand cmd = new SqlCommand(cmdtext, cn);
-                SqlDataReader dr = cmd.ExecuteReader();
-
-               
-                while (dr.Read())
+                if (p != null)
                 {
                     cmd.Parameters.AddRange(p);
                 }
 
-                dr.Close(); 
-
-
                 cn.Open();
-
-                return dr;
-
+          return cmd.ExecuteReader();
+               
             }
             catch (Exception)
             {
@@ -78,6 +71,7 @@ namespace Vektorel.DAL
                     cn.Close();
                 }
             }
+
 
 
         }

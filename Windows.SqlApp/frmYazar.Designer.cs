@@ -38,6 +38,7 @@
             this.dtYazarOlumTarih = new System.Windows.Forms.DateTimePicker();
             this.dtYazarDtar = new System.Windows.Forms.DateTimePicker();
             this.chckyasiyor = new System.Windows.Forms.CheckBox();
+            this.button1 = new System.Windows.Forms.Button();
             this.SuspendLayout();
             // 
             // label3
@@ -78,7 +79,7 @@
             // 
             // btnEkle
             // 
-            this.btnEkle.Location = new System.Drawing.Point(150, 208);
+            this.btnEkle.Location = new System.Drawing.Point(150, 220);
             this.btnEkle.Name = "btnEkle";
             this.btnEkle.Size = new System.Drawing.Size(75, 23);
             this.btnEkle.TabIndex = 6;
@@ -125,11 +126,21 @@
             this.chckyasiyor.UseVisualStyleBackColor = true;
             this.chckyasiyor.CheckedChanged += new System.EventHandler(this.Chckyasiyor_CheckedChanged);
             // 
+            // button1
+            // 
+            this.button1.Location = new System.Drawing.Point(150, 191);
+            this.button1.Name = "button1";
+            this.button1.Size = new System.Drawing.Size(75, 23);
+            this.button1.TabIndex = 17;
+            this.button1.Text = "button1";
+            this.button1.UseVisualStyleBackColor = true;
+            // 
             // frmYazar
             // 
             this.AutoScaleDimensions = new System.Drawing.SizeF(6F, 13F);
             this.AutoScaleMode = System.Windows.Forms.AutoScaleMode.Font;
             this.ClientSize = new System.Drawing.Size(345, 246);
+            this.Controls.Add(this.button1);
             this.Controls.Add(this.chckyasiyor);
             this.Controls.Add(this.dtYazarDtar);
             this.Controls.Add(this.dtYazarOlumTarih);
@@ -159,5 +170,6 @@
         private System.Windows.Forms.DateTimePicker dtYazarOlumTarih;
         private System.Windows.Forms.DateTimePicker dtYazarDtar;
         private System.Windows.Forms.CheckBox chckyasiyor;
+        private System.Windows.Forms.Button button1;
     }
 }

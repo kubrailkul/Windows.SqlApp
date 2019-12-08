@@ -16,7 +16,7 @@ namespace Windows.SqlApp
         {
             Application.EnableVisualStyles();
             Application.SetCompatibleTextRenderingDefault(false);
-            Application.Run(new frmYazar());
+            Application.Run(new Form1());
         }
     }
 }
