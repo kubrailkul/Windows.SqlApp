@@ -142,6 +142,7 @@
             this.Controls.Add(this.label3);
             this.Name = "frmYazar";
             this.Text = "frmYazar";
+            this.Load += new System.EventHandler(this.frmYazar_Load);
             this.ResumeLayout(false);
             this.PerformLayout();
 

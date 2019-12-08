@@ -77,5 +77,10 @@ namespace Windows.SqlApp
                 dtYazarOlumTarih.Enabled = true;
             }
         }
+
+        private void frmYazar_Load(object sender, EventArgs e)
+        {
+
+        }
     }
 }

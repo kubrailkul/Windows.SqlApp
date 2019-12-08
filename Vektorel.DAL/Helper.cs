@@ -42,5 +42,46 @@ namespace Vektorel.DAL
             }
 
         }
+
+        public SqlDataReader ExecuteReader(string cmdtext,SqlParameter[] p=null)
+
+        {
+            try
+            {
+
+                SqlCommand cmd = new SqlCommand(cmdtext, cn);
+                SqlDataReader dr = cmd.ExecuteReader();
+
+               
+                while (dr.Read())
+                {
+                    cmd.Parameters.AddRange(p);
+                }
+
+                dr.Close(); 
+
+
+                cn.Open();
+
+                return dr;
+
+            }
+            catch (Exception)
+            {
+
+                throw;
+            }
+            finally
+            {
+                if (cn != null && cn.State != ConnectionState.Closed)
+                {
+                    cn.Close();
+                }
+            }
+
+
+        }
+
+
     }
 }
