@@ -60,6 +60,12 @@
     <Compile Include="frmYazar.Designer.cs">
       <DependentUpon>frmYazar.cs</DependentUpon>
     </Compile>
+    <Compile Include="frmYazarBul.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="frmYazarBul.Designer.cs">
+      <DependentUpon>frmYazarBul.cs</DependentUpon>
+    </Compile>
     <Compile Include="Program.cs" />
     <Compile Include="Properties\AssemblyInfo.cs" />
     <EmbeddedResource Include="Form1.resx">
@@ -67,6 +73,9 @@
     </EmbeddedResource>
     <EmbeddedResource Include="frmYazar.resx">
       <DependentUpon>frmYazar.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="frmYazarBul.resx">
+      <DependentUpon>frmYazarBul.cs</DependentUpon>
     </EmbeddedResource>
     <EmbeddedResource Include="Properties\Resources.resx">
       <Generator>ResXFileCodeGenerator</Generator>
